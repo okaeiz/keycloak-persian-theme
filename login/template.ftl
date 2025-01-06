@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="robots" content="noindex, nofollow">
-
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <#if properties.meta?has_content>
         <#list properties.meta?split(' ') as meta>
             <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}"/>
@@ -38,13 +38,7 @@
 
 <body class="${properties.kcBodyClass!}">
 <div class="${properties.kcLoginClass!}">
-    <header aria-label="Page header" class="cds--header">
-        <a class="cds--header__name">
-            <span class="cds--header__name--prefix">Camunda</span>
-            &nbsp;
-            Identity
-        </a>
-    </header>
+
     <div class="${properties.kcFormCardClass!} login-box">
         <header class="${properties.kcFormHeaderClass!}">
             <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
